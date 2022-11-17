@@ -1,0 +1,45 @@
+<%# render "devise/shared/header" %>
+<div class='main'>
+
+  <%# 画面上部の帯部分 %>
+  <div class='title-contents'>
+    <h2 class='service-title'>
+      ANIJU
+    </h2>
+    <p class='service-explain'>
+      kakeroma
+    </p>
+  </div>
+  <%# /画面上部の帯部分  %>
+
+
+  <%# 投稿一覧 %>
+  <div class='consultation'>
+    
+    <div class="title" >
+      新着
+    </div>
+
+    <div class="consultation-content">
+      <% @consul.each do |consul| %>
+        <div class="consultation-date">
+          <%= l consul.created_at %>
+        </div>
+        <div class="consultation-user">
+          <%= consul.user.name %>
+        </div> 
+        <div class="consultation-title">
+          <%= consul.text %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+  <%# 投稿一覧 %>
+  
+    
+</div>
+<%= link_to('#', class: 'purchase-btn') do %>
+  <span class='purchase-btn-text'>出品する</span>
+  <%= image_tag 'icon_camera.png' , size: '185x50' ,class: "purchase-btn-icon" %>
+<% end %>
+<%# render "devise/shared/footer" %>

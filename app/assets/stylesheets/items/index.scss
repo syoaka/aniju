@@ -1,0 +1,100 @@
+a {
+  text-decoration: none;
+}
+
+.main {
+  background: #f8f8f8;
+}
+
+/* 画面上部の「人生を変えるフリマアプリ」帯部分 */
+.title-contents {
+  width: 100vw;
+  height: 400px;
+  background-image: image-url('IMG_213111.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 5vh 5vw;
+  color: #fff;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+.service-title {
+  font-size: 8vh;
+}
+
+.service-explain {
+  font-size: 2.5vh;
+  line-height: 40px;
+}
+
+/* //画面上部の「人生を変えるフリマアプリ」帯部分 */
+
+
+/* 投稿一覧 */
+
+.consultation {
+  background-color: rgb(234, 236, 199);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10vh 0;
+}
+
+.title {
+  font-size: 3vh;
+  margin: 1vh 0;
+  text-decoration: none;
+  color: #3ccace;
+  font-weight: bold;
+}
+
+.consultation-content {
+  background-color: rgb(164, 203, 223);
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.message-date {
+  background-color: rgb(209, 147, 208);
+  color: #999;
+  font-size: 12px;
+  padding-left: 10px;
+}
+
+.consultation-user {
+  background-color: rgb(153, 222, 161);
+  color: black;
+  padding: 1vw;
+}
+
+.consultation-title {
+  background-color: rgb(200, 219, 130);
+  font-size: 2.5vh;
+}
+
+/* 投稿一覧 */
+
+
+.star-btn {
+  display: flex;
+  align-items: center;
+}
+
+.star-icon {
+  height: 2vh;
+  width: 2vh;
+  margin-right: 0.5vw;
+}
+
+.star-count {
+  font-size: 2vh;
+}
+
+/* //商品一覧 */
